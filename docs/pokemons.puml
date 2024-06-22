@@ -1,0 +1,13 @@
+@startuml
+
+class Pokemons {
+    - _base_url: str
+    - _pokes: list[str]
+    - _data: list[dict]
+    + __init__(pokes: list[str]): None
+    + evolucao(_poke: str): None
+    + main(): None
+    + save_to_dataframe(): pd.DataFrame
+}
+
+@enduml
